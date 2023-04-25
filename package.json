@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Scythercas/linebot-tutorial/issues"
   },
-  "homepage": "https://github.com/Scythercas/linebot-tutorial"
+  "homepage": "https://github.com/Scythercas/linebot-tutorial",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
