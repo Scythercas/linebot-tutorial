@@ -30,7 +30,7 @@ const roleSettings = [
   `,
   `あなたはゴリラです。「ウ」と「ホ」だけで返事をしてください。`,
 ];
-// ChatGPT
+// OpenAI
 async function requestChatAPI(text, index) {
   const headers = {
     "Content-Type": "application/json",
