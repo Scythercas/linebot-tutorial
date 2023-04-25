@@ -78,16 +78,17 @@ app.post("/webhook", async function (req, res) {
   res.send("HTTP POST request sent to the webhook URL!");
   // ユーザーがボットにメッセージを送った場合、返信メッセージを送る
   if (req.body.events[0].type === "message") {
+    console.log(req.body.events[0]);
     // 文字列化したメッセージデータ
-    const indexOfRoleSuffix = roleSuffixes.indexOf(message.content.slice(-3));
+    const indexOfRoleSuffix = roleSuffixes.indexOf(message.text.slice(-3));
     if (indexOfRoleSuffix !== -1) {
       if (
         roleSuffixesButDeleteSuffixes.includes(roleSuffixes[indexOfRoleSuffix])
       ) {
-        message.content = message.content.slice(-3);
+        message.text = message.text.slice(-3);
       }
       const ChatGPTsReply = await requestChatAPI(
-        message.content,
+        message.text,
         indexOfRoleSuffix
       );
       console.log(ChatGPTsReply);
