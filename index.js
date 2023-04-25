@@ -80,6 +80,7 @@ app.post("/webhook", async function (req, res) {
   if (req.body.events[0].type === "message") {
     console.log(req.body.events[0]);
     // 文字列化したメッセージデータ
+    const message = req.body.events[0].message;
     const indexOfRoleSuffix = roleSuffixes.indexOf(message.text.slice(-3));
     if (indexOfRoleSuffix !== -1) {
       if (
