@@ -86,6 +86,10 @@
     "npm i openai": {
       "name": "npm i openai",
       "command": "npm i openai"
+    },
+    "npm i https": {
+      "name": "npm i https",
+      "command": "npm i https"
     }
   }
 }
