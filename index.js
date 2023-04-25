@@ -90,6 +90,7 @@ app.post("/webhook", async function (req, res) {
         message.content,
         indexOfRoleSuffix
       );
+      console.log(ChatGPTsReply);
       var dataString = JSON.stringify({
         replyToken: req.body.events[0].replyToken,
         messages: [
