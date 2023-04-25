@@ -87,7 +87,7 @@ app.post("/webhook", function (req, res) {
         message.content,
         indexOfRoleSuffix
       );
-      const dataString = JSON.stringify({
+      var dataString = JSON.stringify({
         replyToken: req.body.events[0].replyToken,
         messages: [
           {
@@ -101,7 +101,7 @@ app.post("/webhook", function (req, res) {
         ],
       });
     }else{
-      const dataString = JSON.stringify({
+      var dataString = JSON.stringify({
         replyToken: req.body.events[0].replyToken,
         messages: [
           {
