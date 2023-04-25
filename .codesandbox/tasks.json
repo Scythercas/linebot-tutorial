@@ -82,6 +82,10 @@
     "npm start": {
       "name": "npm start",
       "command": "npm start"
+    },
+    "npm i openai": {
+      "name": "npm i openai",
+      "command": "npm i openai"
     }
   }
 }
