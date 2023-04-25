@@ -98,10 +98,6 @@ app.post("/webhook", async function (req, res) {
             type: "text",
             text: "えっとね・・・",
           },
-          {
-            type: "text",
-            text: ChatGPTsReply,
-          },
         ],
       });
     } else {
