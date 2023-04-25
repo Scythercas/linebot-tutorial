@@ -78,6 +78,10 @@
     "npm i axios": {
       "name": "npm i axios",
       "command": "npm i axios"
+    },
+    "npm start": {
+      "name": "npm start",
+      "command": "npm start"
     }
   }
 }
