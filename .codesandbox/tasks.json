@@ -1,0 +1,83 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": true
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "npm install express": {
+      "name": "npm install express",
+      "command": "npm install express"
+    },
+    "git add .": {
+      "name": "git add .",
+      "command": "git add ."
+    },
+    "git commit -m \"base no express\"": {
+      "name": "git commit -m \"base no express\"",
+      "command": "git commit -m \"base no express\""
+    },
+    "git config --global user.email \"garyo20020124@gmail.com\"": {
+      "name": "git config --global user.email \"garyo20020124@gmail.com\"",
+      "command": "git config --global user.email \"garyo20020124@gmail.com\""
+    },
+    "git push": {
+      "name": "git push",
+      "command": "git push"
+    },
+    "git branch": {
+      "name": "git branch",
+      "command": "git branch"
+    },
+    "git push origin main": {
+      "name": "git push origin main",
+      "command": "git push origin main"
+    },
+    "git log": {
+      "name": "git log",
+      "command": "git log"
+    },
+    "git checkout main": {
+      "name": "git checkout main",
+      "command": "git checkout main"
+    },
+    "git push origin draft/suspicious-cori": {
+      "name": "git push origin draft/suspicious-cori",
+      "command": "git push origin draft/suspicious-cori"
+    },
+    "git remote add origin https://github.com/Scythercas/linebot-tutorial": {
+      "name": "git remote add origin https://github.com/Scythercas/linebot-tutorial",
+      "command": "git remote add origin https://github.com/Scythercas/linebot-tutorial"
+    },
+    "git status": {
+      "name": "git status",
+      "command": "git status"
+    },
+    "git checkout -f main ": {
+      "name": "git checkout -f main ",
+      "command": "git checkout -f main "
+    },
+    "npm i express": {
+      "name": "npm i express",
+      "command": "npm i express"
+    },
+    "npm i axios": {
+      "name": "npm i axios",
+      "command": "npm i axios"
+    }
+  }
+}
